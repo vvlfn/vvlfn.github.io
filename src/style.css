@@ -53,7 +53,7 @@ body {
 	min-width: fit-content;
 	width: 25vw;
 	height: 10vh;
-	font-size: 4vw;
+	font-size: 4vh;
 	text-align: center;
 	animation: spin 1s ease-in-out alternate infinite;
 	/* transform: translate(-50%, -50%); */
@@ -82,27 +82,27 @@ body {
 	position: absolute;
 	top: 3vh;
 	left: 2vw;
-	width: 10vw;
+	width: 10vh;
 	rotate: 20deg;
 }
 #big_orange_cat {
 	position: absolute;
 	bottom: 3vh;
-	right: 0;
-	width: 20vw;
+	right: -5vw;
+	width: 20vh;
 	rotate: 15deg;
 }
 #gray_cat_smile {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	width: 20vw;
+	width: 20vh;
 }
 #cat_wave {
 	position: absolute;
 	bottom: -5vh;
 	left: 35vw;
-	width: 20vw;
+	width: 20vh;
 }
 .pink_glow {
 	filter: drop-shadow(0 0 15px hsl(350, 100%, 70%));
