@@ -7,4 +7,5 @@ let timer = setInterval(function () {
 	// console.log(distance);
 	let days = Math.ceil(distance / 1000 / 60 / 60 / 24);
 	document.getElementById("timer").innerHTML = `${days} dni`;
+	document.title = `Już ${days} dni!`
 }, 1000);
