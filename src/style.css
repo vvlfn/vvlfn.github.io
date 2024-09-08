@@ -80,7 +80,9 @@ body {
 .pink_glow {
 	filter: drop-shadow(0 0 15px hsl(350, 100%, 70%));
 }
-
+#overlay img {
+	z-index: -99;
+}
 #gray_cat {
 	position: absolute;
 	rotate: -15deg;
@@ -102,7 +104,7 @@ body {
 		font-size: 7.5vh !important;
 	}
 	body {
-		background-size: auto 100vh;
+		background-size: auto 110vh;
 	}
 	#gray_cat {
 		width: 30vw;
