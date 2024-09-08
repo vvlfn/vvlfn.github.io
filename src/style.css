@@ -1,124 +1,135 @@
 @font-face {
-  font-family: CatPaw;
-  src: url(../fonts/CatPaw.otf);
+	font-family: CatPaw;
+	src: url(../fonts/CatPaw.otf);
 }
 @font-face {
-  font-family: NerkoOne;
-  src: url(../fonts/NerkoOne-Regular.ttf);
+	font-family: NerkoOne;
+	src: url(../fonts/NerkoOne-Regular.ttf);
 }
 @font-face {
-  font-family: Cattie;
-  src: url(../fonts/Cattie-Regular.ttf);
+	font-family: Cattie;
+	src: url(../fonts/Cattie-Regular.ttf);
 }
-#title {
-  font-family: "NerkoOne";
-  color: pink;
-  -webkit-text-stroke: 0.2vw rgb(70, 60, 60);
-}
-#timer {
-  font-family: "Cattie";
-  /* -webkit-text-stroke: 0.1px pink; */
-  color: rgb(70, 60, 60);
-  font-weight: lighter;
-  /* text-shadow: 3px 3px 0px white; */
-}
+
 /* Font stuff */
 
 *,
 html {
-  --rotate: 15deg;
-  margin: 0;
-  padding: 0;
-  font-family: "Arial";
-
+	--rotate: 15deg;
+	margin: 0;
+	padding: 0;
+	font-family: "Arial";
 }
 body {
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  background-image: url(../img/bg_tmp.png);
-  background-position: 50% 0;
-  /* background-size: cover; */
-  background-size: auto 100vh;
-  background-repeat: no-repeat;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	background-image: url(../img/bg_tmp.png);
+	background-position: 50% 0;
+	/* background-size: cover; */
+	background-repeat: no-repeat;
 }
 
 #title {
-  width: 100%;
-  text-align: center;
-  /* font-size: 7.5vw; */
+	width: 100%;
+	text-align: center;
+	font-family: "NerkoOne";
+	color: pink;
+	-webkit-text-stroke: 0.2vw rgb(70, 60, 60);
 }
 
 #counter {
-  position: absolute;
-  top: calc(45% - 5vh);
-  left: calc(50% - 50vw);
-  /* min-width: fit-content; */
-  width: 100vw;
-  height: 10vh;
-  font-size: 8vh;
-  text-align: center;
-  animation: spin 1s ease-in-out alternate infinite;
-  /* transform: translate(-50%, -50%); */
+	position: absolute;
+	top: calc(45% - 5vh);
+	left: calc(50% - 50vw);
+	/* min-width: fit-content; */
+	width: 100vw;
+	height: 10vh;
+	font-size: 8vh;
+	text-align: center;
+	animation: spin 1s ease-in-out alternate infinite;
+	/* transform: translate(-50%, -50%); */
 }
 
 @keyframes spin {
-  from {
-    rotate: -5deg;
-  }
-  to {
-    rotate: 5deg;
-  }
+	from {
+		rotate: -5deg;
+	}
+	to {
+		rotate: 5deg;
+	}
+}
+
+#timer {
+	font-family: "Cattie";
+	/* -webkit-text-stroke: 0.1px pink; */
+	color: rgb(70, 60, 60);
+	font-weight: lighter;
+	/* text-shadow: 3px 3px 0px white; */
 }
 
 #overlay {
-  width: 100vw;
-  height: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  /* background-color: #f008; */
-  /* debug  */
+	width: 100vw;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	/* background-color: #f008; */
+	/* debug  */
+}
+.pink_glow {
+	filter: drop-shadow(0 0 15px hsl(350, 100%, 70%));
 }
 
 #gray_cat {
-  position: absolute;
-  top: 3vh;
-  left: 2vw;
-  width: 10vh;
-  rotate: 20deg;
-}
-#big_orange_cat {
-  position: absolute;
-  bottom: 3vh;
-  right: -5vw;
-  width: 20vh;
-  rotate: 15deg;
+	position: absolute;
+	rotate: -15deg;
 }
 #gray_cat_smile {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 20vh;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }
-#cat_wave {
-  position: absolute;
-  bottom: -5vh;
-  left: 35vw;
-  width: 20vh;
+#el_gato {
+	position: absolute;
+	bottom: 0;
+	transform: translate(-50%, -5%);
+	left: 50vw;
 }
-.pink_glow {
-  filter: drop-shadow(0 0 15px hsl(350, 100%, 70%));
-}
-
 
 @media screen and (max-width: 1200px) {
-  #title{
-    font-size: 7.5vh !important;
-  }
+	#title {
+		font-size: 7.5vh !important;
+	}
+	body {
+		background-size: auto 100vh;
+	}
+	#gray_cat {
+		width: 30vw;
+		top: 10vh;
+	}
+	#gray_cat_smile {
+		width: 20vh;
+	}
+	#el_gato {
+		width: 25vw;
+	}
 }
 @media screen and (min-width: 1200px) {
-  #title{
-    font-size: 7.5vw !important;
-  }
+	#title {
+		font-size: 7.5vw !important;
+	}
+	body {
+		background-size: cover;
+	}
+	#gray_cat {
+		width: 15vw;
+		top: 2vh;
+	}
+	#gray_cat_smile {
+		width: 35vh;
+	}
+	#el_gato {
+		width: 20vh;
+	}
 }
