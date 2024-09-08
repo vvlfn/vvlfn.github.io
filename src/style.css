@@ -1,0 +1,109 @@
+@font-face {
+	font-family: CatPaw;
+	src: url(../fonts/CatPaw.otf);
+}
+@font-face {
+	font-family: NerkoOne;
+	src: url(../fonts/NerkoOne-Regular.ttf);
+}
+@font-face {
+	font-family: Cattie;
+	src: url(../fonts/Cattie-Regular.ttf);
+}
+#title {
+	font-family: "NerkoOne";
+	color: pink;
+	-webkit-text-stroke: 0.2vw rgb(70, 60, 60);
+}
+#timer {
+	font-family: "Cattie";
+	/* -webkit-text-stroke: 0.1px pink; */
+	color: rgb(70, 60, 60);
+	font-weight: lighter;
+	/* text-shadow: 3px 3px 0px white; */
+}
+/* Font stuff */
+
+*,
+html {
+	--rotate: 15deg;
+	margin: 0;
+	padding: 0;
+	font-family: "Arial";
+}
+body {
+	overflow: hidden;
+	background-image: url(../img/bg_tmp.png);
+	background-position: 50% 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#title {
+	width: 100%;
+	text-align: center;
+	font-size: 7.5vw;
+}
+
+#counter {
+	position: absolute;
+	top: calc(45% - 5vh);
+	left: calc(50% - 12.5vw);
+	min-width: fit-content;
+	width: 25vw;
+	height: 10vh;
+	font-size: 4vw;
+	text-align: center;
+	animation: spin 1s ease-in-out alternate infinite;
+	/* transform: translate(-50%, -50%); */
+}
+
+@keyframes spin {
+	from {
+		rotate: -5deg;
+	}
+	to {
+		rotate: 5deg;
+	}
+}
+
+#overlay {
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	position: absolute;
+	/* background-color: #f008; */
+	/* debug  */
+}
+
+#gray_cat {
+	position: absolute;
+	top: 3vh;
+	left: 2vw;
+	width: 10vw;
+	rotate: 20deg;
+}
+#big_orange_cat {
+	position: absolute;
+	bottom: 3vh;
+	right: 0;
+	width: 20vw;
+	rotate: 15deg;
+}
+#gray_cat_smile {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 20vw;
+}
+#cat_wave {
+	position: absolute;
+	bottom: -5vh;
+	left: 35vw;
+	width: 20vw;
+}
+.pink_glow {
+	filter: drop-shadow(0 0 15px hsl(350, 100%, 70%));
+}
